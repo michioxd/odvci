@@ -1,6 +1,4 @@
 import Document, { Head, Html, Main, NextScript } from 'next/document'
-import siteConfig from '../../config/site.config'
-
 class MyDocument extends Document {
   render() {
     return (
