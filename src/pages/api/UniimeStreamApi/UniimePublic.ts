@@ -5,7 +5,7 @@ import axios, { AxiosResponseHeaders } from 'axios'
 import Cors from 'cors'
 
 import { driveApi, cacheControlHeader } from '../../../../config/api.config';
-import { encodePath, getAccessToken, checkAuthRoute } from '.'
+import { encodePath, getAccessToken, checkAuthRoute } from '../index'
 
 function b64DecodeUnicode(str: string) {
     // Going backwards: from bytestream, to percent-encoding, to original string.
