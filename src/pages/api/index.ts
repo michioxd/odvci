@@ -8,7 +8,7 @@ import siteConfig from '../../../config/site.config'
 import { revealObfuscatedToken } from '../../utils/oAuthHandler'
 import { compareHashedToken } from '../../utils/protectedRouteHandler'
 import { getOdAuthTokens, storeOdAuthTokens } from '../../utils/odAuthTokenStore'
-import { runCorsMiddleware } from './raw'
+import { runCorsMiddleware } from './UniimeStreamApi/UniimePublic'
 
 const basePath = pathPosix.resolve('/', siteConfig.baseDirectory)
 const clientSecret = revealObfuscatedToken(apiConfig.obfuscatedClientSecret)
