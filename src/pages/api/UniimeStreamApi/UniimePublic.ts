@@ -44,7 +44,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
         return;
     }
 
-    const path = b64DecodeUnicode(hash);
+    const path: string | string[] = b64DecodeUnicode(hash);
 
     // Sometimes the path parameter is defaulted to '[...path]' which we need to handle
     if (path === '[...path]') {
